@@ -9,44 +9,18 @@
 </head>
 <body>
   <div class="container">
-    <div class="grid">
-      <div class="row">
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
+    <img src="etchasketch.png" alt="Etch-a-Sketch" width="250px">
+
+    <div class="bezel">
+      <div class="grid">
       </div>
-      <div class="row">
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
+    </div>
+
+    <div class="controls">
+      <label for="size">Pencil Size:</label>
+      <input type="range" id="size" name="size" min="16" max="100" step="1" value="16" onchange="changePencilSize(event);">
+      <span class="size-text">16px</span>
+      <button id="clear" name="clear" onclick="clearGrid();" >Clear</button>
     </div>
   </div>
 

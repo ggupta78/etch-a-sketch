@@ -13,13 +13,27 @@ body {
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 960px;
+  margin-top: 10px;
+}
+
+.bezel {
+  margin-top: 10px;
+  padding: 50px;
+  border: 1px solid red;
+  border-radius: 30px;
+  background: rgb(208,44,44);
 }
 
 .grid {
   width: 640px;
   height: 640px;
-  border: 1px solid red;
+  border: 2px solid rgb(175,175,175);
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(255,255,255,1);
+  box-shadow: 4px 4px 40px 0px rgba(255,255,255,1);
 }
 
 .row {
@@ -30,9 +44,30 @@ body {
 
 .col {
   flex: 1;
-  /* border: 1px solid rgb(131, 131, 131); */
+  /* border: 1px solid rgb(138, 138, 138); */
 }
 
 .col:hover {
   background-color: gray;
 }
+
+.controls {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.controls > label {
+  padding-top: 1px;
+}
+
+.size-text {
+  padding-top: 2px;
+}
+
+.controls > button {
+  margin-left: 20px;
+}
+
+/* Shake animation to clear the grid */

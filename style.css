@@ -1,0 +1,38 @@
+* {
+  /* box-sizing: border-box; */
+  /* border: 1px solid red; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 960px;
+}
+
+.grid {
+  width: 640px;
+  height: 640px;
+  border: 1px solid red;
+}
+
+.row {
+  display: flex;
+  background-color: white;
+  text-align: center;
+}
+
+.col {
+  flex: 1;
+  /* border: 1px solid rgb(131, 131, 131); */
+}
+
+.col:hover {
+  background-color: gray;
+}
